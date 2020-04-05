@@ -20,7 +20,7 @@
 
     /* navigation menu */
     nav {
-        border-radius: 5% 10%;
+        border-radius: 10px 30px;
         background: rgb(239, 80, 41);
         margin: 10 auto;
         display: flex;
@@ -46,17 +46,19 @@
 
     /* main container area beneath menu */
     main {
-        border-radius: 5% 10%;
+        border-radius: 10px 30px;
         background: rgb(245, 238, 219);
         display: flex;
     }
     .sidebar {
          margin-right: 25px;
         padding: 10px;
+        
     }
     .sidebar img {
-        padding-left:10px;
+       
         width: 200px;
+        border-radius:10px 30px;
     }
     .content {
         flex: 1;
@@ -65,30 +67,31 @@
     .interests header {
         font-size: 1.25em;
     }
-</style>
+        </style>
     </head>
     
     <body>
-      <div id="all contents">
+      <div id="all-contents"> 
           <nav>
               <header>Chuck's Website</header>
               <ul>
                   <li><a href="index.html">Home</a></li>
-                  <li><a href = "portfolio.html">Portfolio</a></li>              
+                  <li><a href = "portfolio.html">Portfolio</a></li>    
+                  <li><a href="studies.html">Studies</a></li>
               </ul>
           </nav>
           
           <main>
           <div class="sidebar">
-              <img src = "https://pbs.twimg.com/profile_images/610086967661998080/HyPhstNM_400x400.jpg">
+              <img src = "photo.jpg">
               
           </div>    
-          <div class ="content">
-              <heaad>
+          <div class="content">
+              <header></header>
                   <p>
                       student at opspark!
                   </p>
-                  <section class = "interests">
+                  <section class="interests">
                       <header>Interests </header>
                           <ul>
                               <li>Coding</li>
@@ -97,7 +100,7 @@
                           </ul>
                      
                   </section>
-              </heaad>
+              </header>
           </div>
           </main>
       </div>
