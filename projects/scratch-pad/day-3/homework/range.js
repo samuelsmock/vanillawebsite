@@ -21,19 +21,19 @@
  *  b. you'll need a loop, which one is best?
  *  c. you'll wanna make use of the push() method of Array.
  */
-function range(start, end) {
+function range(start, end) {            //creates an array between start and end parameters
     // YOUR CODE GOES BELOW HERE //
     var array = [];
-    if(start<end){
+    if(start<end){                          //creates ascending array if start<finish
         for(let i = start; i <= end; i++ ){
         array.push(i);
     }
-    }else if(end<start){
+    }else if(end<start){                    //creates a descending array if start>finish
         for(let i = start; i >= end; i-- ){
         array.push(i);
     }
     }
-    return array;
+    return array;                       //returns populated array
     
     // YOUR CODE GOES ABOVE HERE //
 }

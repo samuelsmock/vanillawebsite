@@ -2,33 +2,67 @@
 // range ///////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function range() {
-
+function range(start, end, step) {            //creates an array between start and end parameters
+    // YOUR CODE GOES BELOW HERE //
+    var array = [];
+    if(start<end){                          //creates ascending array if start<finish
+        for(let i = start; i <= end; i += (step===undefined ? 1 : step) ){
+        array.push(i);
+    }
+    }else if(end<start){                    //creates a descending array if start>finish
+        for(let i = start; i >= end; i-- ){
+        array.push(i);
+    }
+    }
+    return array;                       //returns populated array
+    
+    // YOUR CODE GOES ABOVE HERE //
 }
+console.log(range(2,8,2));
 
 ////////////////////////////////////////////////////////////////////////////////
 // sum /////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function sum() {
-
+function sum(arr) {               //returns the sum of all elements in an array
+  var sum =0;
+  for (let i = 0 ; i<arr.length; i++){  //loops through array adding each element
+     sum += arr[i];
+  }
+  return sum;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // reverseArray ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function reverseArray() {
-
+function reverseArray(arr) {  //takes in an array, and returns the array in reverse
+  
+  let revArr = [];
+  for (let i =0; i<arr.length; i++){ //populates revArray with indexes inserted at the beginning
+    revArr.unshift(arr[i]);
+  }
+return revArr;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // reverseArrayInPlace /////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function reverseArrayInPlace() {
+function reverseArrayInPlace(arr) {
+  
+  let revArr = [];
+  for (let i =0; i<arr.length; i++){
+    revArr.unshift(arr[i]);
+  }
+  for (let j = 0; j <arr.length;j++){
+    arr[j] = revArr[j];
+  }
 
 }
+let array= [1,2,3,4];
+reverseArrayInPlace(array);
+console.log(array);
 
 ////////////////////////////////////////////////////////////////////////////////
 // arrayToList /////////////////////////////////////////////////////////////////
