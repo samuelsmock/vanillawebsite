@@ -3,10 +3,10 @@
 // triangles ///////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function triangles(number) {
-  var num = '#';
+function triangles(number) {        //prints a number of hashtags separated by new lines
+  var num = '#';                    // each new line having one more
   for(var i = 0; i < number; i++){
-    console.log(num);
+    console.log(num);               //prints num, which increases each time the loop is called
     num += '#';
 }
 }
@@ -70,3 +70,8 @@ if ((typeof process !== 'undefined') &&
     drawChessboard,
   };
 }
+
+
+
+
+
