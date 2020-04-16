@@ -59,19 +59,28 @@ function func(parameter){
 }
 
 //4. How do we assign a function to a variable?//
-/*
+/**
 *
-* For any value to exit the code block of a function, we must use the
-* return keywoird withing the function. We may then pass values to external
-* variables.
+* We can assign functions to variables and create function expressions.
+* 
+* To do so we will use the following syntax
+* 
+* var <funct. exp. name> = function(parameters){
+    
+    code;
+    
+}
 *
+* where the term on the right side of the equals sign is known as an anonymous function
+* 
 */
 
-function add(x,y){
+var add = function(x,y){    //the term "function(x,y)" is an anonymous function
     return x+y;
 }
 
-var z = add(1,2);
+var z = add(1,2);       //we can now call the function expression just like a 
+                        //declared function
 
 console.log(z); //prints 3
 
@@ -91,6 +100,20 @@ z = minus(1,2);
 
 // 6. Scope: Functions can see and modify variables in parent or global scopes. The inverse is NOT true.
 
+/** 
+ * 
+ * Functions have access to write and edit variables, whether var, let or const, 
+ * that are declared within the parent scope. Parent scope means the scope
+ * or codeblock within which the function is declared.
+ * 
+ * however, var, let , and const are all limited by function scope, meaning any variable
+ * declared within a function will forever be limited to that function. It also
+ * means you do not need to worry about duplicate variable names between functions 
+ * (think 'i'  in a loop).
+ * 
+ *
+ **/
+ 
 var globalVar = "this variable is global";
 function scope(){
     var localVar =" this variable is local";

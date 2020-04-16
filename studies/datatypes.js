@@ -14,10 +14,11 @@
 
 //1. Number //
 
-/*
-* All numbers in Javascript are 8-byte floating-point numbers. Datatype must be a number 
-*if you are to perform arithmetic (but js will often convert in the background). Because
-*there is only one type of number in JavaScript, you can also use scientific notation. 
+/** 
+ * 
+* All numbers in Javascript are 8-byte floating-point numbers, which include negative, interger and non interger (floating point) 
+* numbers. Datatype must be a number if you are to perform arithmetic (but js will often convert in the background). Because
+* there is only one type of number in JavaScript, you can also use scientific notation. 
 */
 var num1 = 5; 
 var num2 = 4e-2;
@@ -25,15 +26,19 @@ console.log(num1*num2); // =>prints 0.2
 
 //2. String//
 
-/* 
+/**
+ * 
 * This is how text information is stored. Strings must be surrounded either by
 * double or single quotes - '' or "". Strings can be manipulated through methods unique to 
-* this data type or through operators. 
+* this data type or through operators. Individual characters are stored as zero indexed items of unicode.
+* Individual characers may be accessed using bracket notation with index 0 as the first character (see example below).
 *
 */
 var string1 = 'Hi,'
 var string2 = 'how are you?'
 console.log(string1 + string2); // print "Hi, how are you?"
+
+console.log(string1[1]); // prints 'i'
 
 //3. Boolean//
 
@@ -127,8 +132,12 @@ console.log(typeof nullvar) //prints object
 /* stands for Not-A-Number, and is a global property of any datatype other than numbers.
 * it is also the default return of math operators that produce imaginary numbers.
 * compares not equal to everything using comparison operators, so you must use 
-* isNaN() for determining if something has that property.
+* isNaN() for determining if something has that property. it is not equal to anything not even itself!
 */
+
+console.log(NaN); // doen't print anything, it is a non-number
+//console.log(NaN === 2); -> prints false
+//console.log(NaN === NaN); -> prints false
 
 function isNumber(arg){
     if (isNaN(arg)){

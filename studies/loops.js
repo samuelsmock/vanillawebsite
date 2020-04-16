@@ -1,11 +1,16 @@
-/*
+/**
 * LOOPS:
 *
-*0. all you to execute the same code block, without writing it all out
+*0. allow you to execute the same code block, without writing it all out multiple times
 *
 *1. commonly used on arrays and objects to do the same thing to each element
 *
-*2. require an index with a starting point conditioon(or ending point) and increment
+*2. require an index with a starting point, condition(or ending point), and increment
+*
+*3. Loops (especially for and while loops), are prone to infinite looping behavior.
+*   this happens when the increment and end condition are such that the end condition is never met.
+*   As an example, a positive increment up from zero, and a negative end condition will
+*   reach an end. Infinite loops are debugged by altering the increment, start, or condition.
 *
 */
 

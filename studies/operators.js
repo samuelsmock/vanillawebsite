@@ -9,9 +9,12 @@
 
 //1. Assignment Operators//
 
-/* 
+/** 
 * These operators change (or establish) the values held within a variable. it is the only
 * type that does this without returning a new variable.
+*
+* Common assignment operators are direct assignment '=', increment "++", and 
+* arithmetic/assignment operators such as '+=', '*='
 *
 */
 
@@ -19,6 +22,14 @@ var num1 = 2;  //assigns this number value to num1
 var num2 = num1// can also assign values in another variable
 
 console.log(num2); //=>prints 2
+
+num2++; // adds one to num2
+ 
+console.log(num2); //prints 3
+
+num2*= 4;   // multiplies num2 by 4 AND reassigns that value to num2
+
+console.log(num2); //prints 12
 
 //2. Arithmetic Operators//
 
@@ -60,12 +71,17 @@ console.log (2<=2); //returns true
 
 //4. Logical Operators//
 
-/*
+/**
+ * 
 * Combine multiple boolean expressions (or operators that return booleans) to 
 * check for combined truth or falseness. the ! symbol will inverse the boolean
 * value.
-*
+* 
+* &&- the and operator returns true if both statements are true
+* 
+* || - the or operator returns true if one or both the statements are true
 */
+
 
 console.log(true && false); //returns false
 console.log(true || false); //returns true
