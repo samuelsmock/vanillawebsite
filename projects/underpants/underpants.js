@@ -479,7 +479,7 @@ return false;
 * Examples:
 *   _.reduce([1,2,3], function(previousSum, currentValue, currentIndex){ return previousSum + currentValue }, 0) -> 6
 */
-// Applies a transformation to each element in an arry using the results of the previous elements transformation as an input
+// Applies a transformation to each element in an array using the results of the previous elements transformation as an input
 _.reduce = function(arr, func, seed){
     // Initialize the first seed based off of input or the first element if no seed is given
     let prevResult = seed === undefined ? arr[0] : seed;
