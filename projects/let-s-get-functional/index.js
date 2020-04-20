@@ -171,7 +171,7 @@ var topThreeTags = function(array){ //takes in a customer list with tags propert
       //loop through the allTags array to ***REDUCE*** it to a series of objects with the tag name and count.
       //this array of objects is called countTags
       
-       if (i === _.indexof(allTags,allTags[i])){       //if this element is the first instance of the tag
+       if (i === _.indexOf(allTags,allTags[i])){       //if this element is the first instance of the tag
       
            countTags.push({name: allTags[i], count:1}); //create a new object for the tag and inititalize its count to 1
       
