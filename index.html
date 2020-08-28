@@ -3,27 +3,30 @@
     <head>
         <link href = "./css/index.css" rel = "stylesheet" type = "text/css">
         <title>Sam Smock</title>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,500,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
     </head>
     
     <body>
       <div id="all-contents"> 
-          <nav>
-              <header>Sam Smock, Full-Stack Web Developer</header>
+          <nav class = "menu">
+              <header>Sam Smock</header>
               <ul>
                   <li><a href="index.html">Home</a></li>
-                  <li><a href = "portfolio.html">React Apps</a></li>    
+                  <li><a href = "portfolio.html">Projects</a></li>
+                  <li><a href = "resume.html">Resume</a></li>    
               </ul>
           </nav>
-          
+          <br>
+          <br>
           <main>
-          <div class="sidebar">
-              <img src = "headshot2.jpg">
-              
+          <div class="sidebar" id = "profile_photo">
+              <img src = "./media/headshot3.jpg">
           </div>    
           <div class="content">
               <header></header>
                   <p>
-                      Full-Stack aware web developer with particular expertise in React and Python 
+                      Full-Stack aware web developer with particular interest in React and Python 
                   </p>
                   <section class="interests">
                       <header> Languages and Libraries </header>
@@ -39,5 +42,31 @@
           </div>
           </main>
       </div>
+
+        
+
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+        </script>
+        <script src='./js/main.js'></script> 
+        
     </body>
+    <div id ="footer">
+        <footer>
+            <div class = 'social_links'>
+                <a href= "https://www.linkedin.com/in/samuel-chuck-smock-502a5a76" target ="_blank">
+                    <img src='./media/linkedIn.png' width="30" height="30"/>
+                </a>   
+                <a href= "https://github.com/samuelsmock" target ="_blank">
+                    <img src='./media/gitHub.png' width="30" height="30"/>
+                </a>    
+            </div>
+            <div class='contact'>
+                 Contact: smock.samuel@gmail.com
+            </div>
+        </footer>
+    </div>
+
 </html>
